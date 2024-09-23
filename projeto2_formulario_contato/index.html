@@ -44,10 +44,26 @@
         input[type="submit"]:hover {
             background-color: #555;
         }
+        .go-back-button {
+            display: inline-block;
+            width: auto;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .go-back-button:hover {
+            background-color: #777;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <button class="go-back-button" onclick="goBack()">Voltar</button>
         <h2>Formulário de Contato</h2>
         <form action="#">
             <label for="name">Nome:</label>
@@ -62,5 +78,11 @@
             <input type="submit" value="Enviar Mensagem">
         </form>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

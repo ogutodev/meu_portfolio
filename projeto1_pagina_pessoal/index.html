@@ -38,6 +38,21 @@
             padding: 10px;
             margin: 5px 0;
         }
+        /* Style for the "Voltar" button */
+        .go-back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .go-back-button:hover {
+            background-color: #777;
+        }
     </style>
 </head>
 <body>
@@ -47,6 +62,9 @@
 
     <section>
         <div class="container">
+            <!-- Bouton Voltar en haut à gauche -->
+            <button class="go-back-button" onclick="goBack()">Voltar</button>
+
             <h2>Sobre Mim</h2>
             <p>Olá! Eu sou um desenvolvedor front-end em formação. Adoro criar interfaces interativas e intuitivas para a web. Estou sempre aprendendo novas tecnologias e melhorando minhas habilidades.</p>
 
@@ -62,5 +80,11 @@
             <p>Em breve adicionarei aqui meus projetos!</p>
         </div>
     </section>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
